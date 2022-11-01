@@ -30,12 +30,14 @@ footer p {
 }
 
 .container-jobs {
+  width: 1024px;
+  height: 1024px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-content: space-between;
   margin: 10px 10px;
-  gap: 25px;
+  /* gap: 25px; */
 }
 
 .jobs {
@@ -86,19 +88,18 @@ footer p {
 @media (max-width: 1184px) {
 }
 @media (max-width: 1024px) {
-  .wrapper {
-    width: 100vw;
-  }
   .jobs {
-    width: 300px;
+    max-width: 300px;
   }
 }
 @media (max-width: 768px) {
   .container-jobs {
     flex-direction: column;
     flex-wrap: nowrap;
+    align-content: space-between;
   }
   .jobs {
-    width: calc(100vw - 20px);
+    width: 100vw;
+    height: 50vh;
   }
 }
